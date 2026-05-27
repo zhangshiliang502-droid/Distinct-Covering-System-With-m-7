@@ -20,7 +20,7 @@ This repository contains Gurobi-based scripts used for experiments on distinct c
 
 - `decide_dcs_m7_gurobi.py`
 
-  Direct feasibility model for deciding whether a distinct covering system with minimum modulus `7` and a chosen lcm `L` exists. Candidate moduli are all divisors `d | L` with `d >= 7`; CRT-normalized residue classes can be fixed with repeated `--add-preset a:m` options.
+  Direct feasibility model for deciding whether a distinct covering system with minimum modulus `7` and a chosen lcm `L` exists. It uses the standard Klein-lemma / saturation reduction: if a covering system exists using a subset of divisors of `L`, then the unused divisors can be assigned arbitrary residue classes and added without destroying coverage. Thus the model may impose exactly one residue class for every divisor `d | L` with `d >= 7`. CRT-normalized residue classes can also be fixed with repeated `--add-preset a:m` options.
 
 ## Example commands
 
