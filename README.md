@@ -1,8 +1,10 @@
 # Minimum-Modulus 7 Covering-System Experiments
 
-Author: Shiliang Zhang
+Authors: Shiliang Zhang, Jiheng Zhang
 
-This repository contains Gurobi-based scripts used for experiments on distinct covering systems with minimum modulus `m = 7`.
+Affiliation: ShanghaiTech IMS
+
+This repository contains Gurobi-based scripts used for experiments on distinct covering systems with minimum modulus `m = 7` at ShanghaiTech IMS.
 
 ## Scripts
 
