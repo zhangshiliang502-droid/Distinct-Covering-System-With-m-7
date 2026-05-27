@@ -4,7 +4,7 @@ Authors: Shiliang Zhang, Jiheng Zhang
 
 Affiliation: ShanghaiTech IMS
 
-This repository contains Gurobi-based scripts used for experiments on distinct covering systems with minimum modulus `m = 7` at ShanghaiTech IMS.
+This repository contains Gurobi-based scripts used for experiments on distinct covering systems with minimum modulus `m = 7`.
 
 ## Scripts
 
