@@ -22,6 +22,11 @@ This repository contains Gurobi-based scripts used for experiments on distinct c
 
   Direct feasibility model for deciding whether a distinct covering system with minimum modulus `7` and a chosen lcm `L` exists. It uses the standard Klein-lemma / saturation reduction: if a covering system exists using a subset of divisors of `L`, then the unused divisors can be assigned arbitrary residue classes and added without destroying coverage. Thus the model may impose exactly one residue class for every divisor `d | L` with `d >= 7`. CRT-normalized residue classes can also be fixed with repeated `--add-preset a:m` options.
 
+## Results
+
+- [Reciprocal-sum / partial-cover bound results](results/partial_bound_results.md)
+- [Direct Gurobi feasibility results](results/direct_gurobi_results.md)
+
 ## Example commands
 
 ```bash
