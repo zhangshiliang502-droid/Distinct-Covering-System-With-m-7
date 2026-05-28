@@ -23,7 +23,7 @@ best-case counts are then added together. This is an optimistic upper bound,
 because it ignores overlaps between different residue classes. If even this
 upper bound is smaller than `L`, then a full cover is impossible.
 
-## Remaining L Batch, k = 20
+## Results
 
 This server batch used `prefix_count = 20`, `time_limit = 600s` for each `L`, and `threads = 32`. Raw output is saved in [`partial_bound_remaining_k20_summary.txt`](partial_bound_remaining_k20_summary.txt).
 
