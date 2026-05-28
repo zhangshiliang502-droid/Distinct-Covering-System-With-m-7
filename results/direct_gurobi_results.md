@@ -23,7 +23,7 @@ configuration:
 --heuristics 0.5 --mip-focus 1 --presolve 2 --cuts 1 --symmetry 2 --threads 32
 ```
 
-## Selected L Batch
+## Results
 
 The following selected `L` values were tested with the same direct feasibility
 model and the listed CRT-normalized fixed classes.
