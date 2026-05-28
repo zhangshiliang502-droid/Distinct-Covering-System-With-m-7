@@ -1,0 +1,38 @@
+Partial-cover reciprocal-sum batch
+Ls=[5544, 5880, 6048, 6300, 6552, 6720, 6930, 7056, 7392, 8064, 8568, 8820, 9072, 9240, 9576, 10080]
+prefix_count=20, time_limit=600.0, threads=32
+
+[1/16] START L=5544 k=20
+[1/16] L=5544 k=20 status=PRECHECK_INFEASIBLE time=0.01s fixed=[6:7, 7:8, 8:9, 10:11] bound_cover=NA tail_sum=265/2772~0.095598846 total_upper=NA certifies=True note=fixed-residue independent coverage precheck is below L
+[2/16] START L=5880 k=20
+[2/16] L=5880 k=20 status=PRECHECK_INFEASIBLE time=0.01s fixed=[6:7, 7:8, 14:15] bound_cover=NA tail_sum=18/245~0.073469388 total_upper=NA certifies=True note=fixed-residue independent coverage precheck is below L
+[3/16] START L=6048 k=20
+[3/16] L=6048 k=20 status=PRECHECK_INFEASIBLE time=0.01s fixed=[6:7, 7:8, 8:9] bound_cover=NA tail_sum=59/672~0.087797619 total_upper=NA certifies=True note=fixed-residue independent coverage precheck is below L
+[4/16] START L=6300 k=20
+[4/16] L=6300 k=20 status=PRECHECK_INFEASIBLE time=0.02s fixed=[6:7, 8:9, 9:10] bound_cover=NA tail_sum=79/630~0.125396825 total_upper=NA certifies=True note=fixed-residue independent coverage precheck is below L
+[5/16] START L=6552 k=20
+[5/16] L=6552 k=20 status=PRECHECK_INFEASIBLE time=0.01s fixed=[6:7, 7:8, 8:9, 12:13] bound_cover=NA tail_sum=139/1638~0.084859585 total_upper=NA certifies=True note=fixed-residue independent coverage precheck is below L
+[6/16] START L=6720 k=20
+[6/16] L=6720 k=20 status=BOUND_CERTIFIED time=52.22s fixed=[6:7, 7:8, 14:15] bound_cover=5785/6720 tail_sum=311/2240~0.138839286 total_upper=0.999702381 certifies=True note=selected-prefix coverage upper bound plus remaining reciprocal sum is below 1
+[7/16] START L=6930 k=20
+[7/16] L=6930 k=20 status=PRECHECK_INFEASIBLE time=0.01s fixed=[6:7, 8:9, 9:10, 10:11] bound_cover=NA tail_sum=53/630~0.084126984 total_upper=NA certifies=True note=fixed-residue independent coverage precheck is below L
+[8/16] START L=7056 k=20
+[8/16] L=7056 k=20 status=PRECHECK_INFEASIBLE time=0.01s fixed=[6:7, 7:8, 8:9] bound_cover=NA tail_sum=101/1764~0.057256236 total_upper=NA certifies=True note=fixed-residue independent coverage precheck is below L
+[9/16] START L=7392 k=20
+[9/16] L=7392 k=20 status=PRECHECK_INFEASIBLE time=0.01s fixed=[6:7, 7:8, 10:11] bound_cover=NA tail_sum=577/7392~0.078057359 total_upper=NA certifies=True note=fixed-residue independent coverage precheck is below L
+[10/16] START L=8064 k=20
+[10/16] L=8064 k=20 status=PRECHECK_INFEASIBLE time=0.01s fixed=[6:7, 7:8, 8:9] bound_cover=NA tail_sum=293/4032~0.072668651 total_upper=NA certifies=True note=fixed-residue independent coverage precheck is below L
+[11/16] START L=8568 k=20
+[11/16] L=8568 k=20 status=PRECHECK_INFEASIBLE time=0.01s fixed=[6:7, 7:8, 8:9, 16:17] bound_cover=NA tail_sum=149/2142~0.069561158 total_upper=NA certifies=True note=fixed-residue independent coverage precheck is below L
+[12/16] START L=8820 k=20
+[12/16] L=8820 k=20 status=PRECHECK_INFEASIBLE time=0.02s fixed=[6:7, 8:9, 9:10] bound_cover=NA tail_sum=877/8820~0.099433107 total_upper=NA certifies=True note=fixed-residue independent coverage precheck is below L
+[13/16] START L=9072 k=20
+[13/16] L=9072 k=20 status=PRECHECK_INFEASIBLE time=0.01s fixed=[6:7, 7:8, 8:9] bound_cover=NA tail_sum=46/567~0.081128748 total_upper=NA certifies=True note=fixed-residue independent coverage precheck is below L
+[14/16] START L=9240 k=20
+[14/16] L=9240 k=20 status=BOUND_CERTIFIED time=235.94s fixed=[6:7, 7:8, 10:11, 14:15] bound_cover=7483/9240 tail_sum=877/4620~0.189826840 total_upper=0.999675325 certifies=True note=selected-prefix coverage upper bound plus remaining reciprocal sum is below 1
+[15/16] START L=9576 k=20
+[15/16] L=9576 k=20 status=PRECHECK_INFEASIBLE time=0.02s fixed=[6:7, 7:8, 8:9, 18:19] bound_cover=NA tail_sum=11/171~0.064327485 total_upper=NA certifies=True note=fixed-residue independent coverage precheck is below L
+[16/16] START L=10080 k=20
+[16/16] L=10080 k=20 status=TIME_LIMIT time=600.30s fixed=[6:7, 7:8, 8:9] bound_cover=9429/10080 tail_sum=127/480~0.264583333 total_upper=1.200000000 certifies=False note=bound is not below 1
+
+DONE elapsed=888.74s
