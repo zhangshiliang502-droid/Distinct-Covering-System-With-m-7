@@ -23,16 +23,6 @@ configuration:
 --heuristics 0.5 --mip-focus 1 --presolve 2 --cuts 1 --symmetry 2 --threads 32
 ```
 
-## Main Direct Runs
-
-| L | status | runtime | explored nodes | simplex iterations | fixed classes | notes |
-|---:|---|---:|---:|---:|---|---|
-| 5040 | INFEASIBLE | 13789.26s | 98459 | 530782259 | 6:7, 7:8, 8:9, 33:35 | proved infeasible on server |
-| 7560 | INFEASIBLE | 13159.68s | 13533 | 186697085 | 6:7, 7:8, 8:9, 33:35 | proved infeasible on server |
-| 8400 | INFEASIBLE | 922.05s | 43 | 1029894 | 6:7, 7:8, 14:15 | proved infeasible on server |
-| 9240 | INFEASIBLE | 590.53s | 19 | 574977 | 6:7, 7:8, 10:11, 14:15 | proved infeasible on server |
-| 10080 | FEASIBLE | 9419.56s | 122934 | 212547442 | 6:7, 7:8, 8:9, 33:35 | covering system found; independent verification passed |
-
 ## Selected L Batch
 
 The following selected `L` values were tested with the same direct feasibility
@@ -69,14 +59,3 @@ Direct Gurobi feasible run in this record:
 ```text
 10080
 ```
-
-## Source Logs
-
-Local result files used to prepare this summary:
-
-- `5040.txt`
-- `7560.txt`
-- `L_run_results.txt`
-- `remote_decide_m7_L8400_20260506_233446.log`
-- `remote_decide_m7_L9240_20260506_233501.log`
-- `remote_decide_m7_L10080_find_20260507_000110.log`
