@@ -15,6 +15,14 @@ proven_prefix_cover_bound / L + remaining_reciprocal_sum < 1
 If this strict inequality holds, then the selected setup cannot cover all of
 `Z/LZ`.
 
+`PRECHECK_INFEASIBLE` means that the instance was certified before building the
+Gurobi MIP. After the fixed residue classes are applied, the code computes, for
+each remaining modulus separately, the largest number of still-uncovered points
+that any one residue class modulo that modulus could cover. These independent
+best-case counts are then added together. This is an optimistic upper bound,
+because it ignores overlaps between different residue classes. If even this
+upper bound is smaller than `L`, then a full cover is impossible.
+
 ## Remaining L Batch, k = 20
 
 This server batch used `prefix_count = 20`, `time_limit = 600s` for each `L`, and `threads = 32`. Raw output is saved in [`partial_bound_remaining_k20_summary.txt`](partial_bound_remaining_k20_summary.txt).
@@ -36,10 +44,3 @@ This server batch used `prefix_count = 20`, `time_limit = 600s` for each `L`, an
 | 9072 | PRECHECK_INFEASIBLE | 0.01s | 6:7, 7:8, 8:9 | NA | 46/567 ~= 0.081129 | NA | certified by precheck |
 | 9240 | BOUND_CERTIFIED | 235.94s | 6:7, 7:8, 10:11, 14:15 | 7483 / 9240 | 877/4620 ~= 0.189827 | 0.999675 | certified |
 | 9576 | PRECHECK_INFEASIBLE | 0.02s | 6:7, 7:8, 8:9, 18:19 | NA | 11/171 ~= 0.064327 | NA | certified by precheck |
-
-## Source Files
-
-Local source result files used to prepare this summary:
-
-- `partial_bound_remaining_results_server/summary.txt`
-- `partial_bound_remaining_results_server/all_results.json`
